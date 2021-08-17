@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>M1-D7</title>
 </head>
+<style>
+  .changeLinkStyle {
+    text-decoration: none;
+    color: rgb(94, 163, 140);
+  }
+</style>
 <body>
   <h1>Woolin' it</h1>
   <table>
@@ -56,6 +62,7 @@
     <button onclick="changeH1()">Changes the title</input>
     <button onclick="changeBodyBackground()">Changes background color</input>
     <button onclick="changingTheAddress()">Changes footer address</input>
+    <button onclick="addClassToLink()">Adds styling to my links</button>
 
   </footer>
   <script type="text/javascript">
@@ -73,6 +80,12 @@
   const changingTheAddress = function() {
     let footerAddress = document.querySelector("footer p")
     footerAddress.innerHTML = "Fake street 99"
+  }
+
+  const addClassToLink = function() {
+    // works on one and not all
+    let everyLink = document.querySelector("a") 
+     everyLink.classList.add("changeLinkStyle");
   }
 
   </script>
