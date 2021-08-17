@@ -54,6 +54,8 @@
     <span>Leave a review?</span>
     <input type="text"></input>
     <button onclick="changeH1()">Changes the title</input>
+    <button onclick="changeBodyBackground()">Changes background color</input>
+    <button onclick="changingTheAddress()">Changes footer address</input>
 
   </footer>
   <script type="text/javascript">
@@ -61,6 +63,16 @@
   const changeH1 = function() {
     let headerToChange = document.querySelector("h1")
     headerToChange.innerHTML = "Baaah-ling it"
+  }
+
+  const changeBodyBackground = function() {
+    let bodyToBeChanged = document.querySelector("body")
+    bodyToBeChanged.style.backgroundColor = "Cornsilk"
+  }
+
+  const changingTheAddress = function() {
+    let footerAddress = document.querySelector("footer p")
+    footerAddress.innerHTML = "Fake street 99"
   }
 
   </script>
