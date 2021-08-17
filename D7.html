@@ -53,7 +53,17 @@
 
     <span>Leave a review?</span>
     <input type="text"></input>
+    <button onclick="changeH1()">Changes the title</input>
+
   </footer>
-  
+  <script type="text/javascript">
+
+  const changeH1 = function() {
+    let headerToChange = document.querySelector("h1")
+    headerToChange.innerHTML = "Baaah-ling it"
+  }
+
+  </script>
+
 </body>
 </html>
